@@ -5,6 +5,7 @@ import {
   defaultClothesColor,
 } from '../../constants';
 import Character from '../Character';
+import PerspectiveDecoration from '../PerspectiveDecoration';
 import MaxWidthWrapper from '../MaxWidthWrapper';
 import ControlPane from '../ControlPane';
 
@@ -30,6 +31,7 @@ function App() {
 
   return (
     <main className={styles.characterEditor}>
+      <PerspectiveDecoration />
       <MaxWidthWrapper className={styles.maxWidthWrapper}>
         <header className={styles.header}>
           <h1 className={styles.title}>Create your Character</h1>
